@@ -1,0 +1,6 @@
+path: C:\Users\keert\Videos\wIntrusion\realtime-weapon-detection/dataset  # dataset root dir
+train: train/images  # train images
+val: val/images  # val images
+
+nc: 3  # number of classes
+names: ['guns', 'knife', 'shotgun']

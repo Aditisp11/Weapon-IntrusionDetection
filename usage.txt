@@ -1,0 +1,53 @@
+Install Dependencies
+Ensure you have Python installed. Then, install the required Python packages:
+
+pip install -r needs.txt
+
+Download YOLOv8 Model
+The project uses a pre-trained YOLOv8 model (yolov8m.pt) for detection.
+
+Usage
+
+    Running the GUI Application
+
+python guiapp.py
+
+Running the Web Server
+Navigate to the weapon_detection_server directory and start the server:
+
+cd weapon_detection_server
+python manage.py runserver
+
+Training the Model
+To train the model on a new dataset, use:
+
+python train.py
+
+Testing the Model
+To test the model, run:
+
+python test.py
+
+Downloading Images
+To download images for training or testing, use:
+
+    python download_images.py
+
+Project Structure
+
+    alarm.mp3: The sound file played when a weapon is detected.
+    best.pt: The best performing model checkpoint.
+    download_images.py: Script to download images for training/testing.
+    guiapp.py: Main script to run the graphical user interface application.
+    needs.txt: File listing required Python packages.
+    oog.py: Additional script for miscellaneous tasks.
+    test.py: Script to test the trained model.
+    train.py: Script to train the model.
+    yolov8m.pt: Pre-trained YOLOv8 model.
+    weapon_detection_server/: Directory containing the web server application.
+        app1/: Django app handling weapon detection.
+        media/: Directory for media files.
+        static/: Directory for static files.
+        template/: Directory for HTML templates.
+        db.sqlite3: SQLite database file.
+        manage.py: Django management script.
